@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Cliente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        .painel {
+            max-width: 400px;
+            margin: 80px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 66px 24px;
+            text-align: center;
+        }
+        .painel h2 {
+            margin-bottom: 24px;
+        }
+        .painel a, .painel button {
+            display: block;
+            width: 100%;
+            margin: 12px 0;
+            padding: 10px; 
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            background: #1976d2;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.2s;
+            box-sizing: border-box;
+        }
+        .painel a:hover, .painel button:hover {
+            background: #1565c0;
+        }
+        .painel .sair {
+            background: #e53935;
+        }
+        .painel .sair:hover {
+            background: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="painel">
+        <h2>Painel do Cliente</h2>
+        <a href="sobre.html">Sobre a clínica</a>
+        <button class="sair" onclick="sairConta()">Sair da Conta</button>
+    </div>
+    <script>
+        function sairConta() {
+            window.location.href = "login.html"; 
+        }
+    </script>
+</body>
+</html>
